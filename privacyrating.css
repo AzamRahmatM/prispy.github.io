@@ -1,0 +1,239 @@
+:root {
+    --primary-color: #4CAF50;
+    --text-color-dark: #333;
+    --text-color-light: #fff;
+    --bg-color: #f2f2f2;
+    --header-bg-color: #898c90;
+    --footer-bg-color: #333;
+    --border-color: #ccc;
+    --star-color: gold;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color-dark);
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #898c90;
+    padding: 20px;
+    text-align: center;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}
+
+
+/* Rest of your CSS ... */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Show Hamburger Menu on Smaller Screens */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* Initially hide the nav links */
+    .nav-links {
+        display: none;
+        /* Rest of your styles */
+    }
+
+    /* When checkbox is checked, display nav links */
+    .nav-toggle:checked + .hamburger-menu + .nav-links {
+        display: flex;
+        flex-direction: column;
+        /* Rest of your styles */
+    }
+}
+.logo-img {
+    height: 50px;}
+
+
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Aligns menu items horizontally */
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 10px; /* Space out the nav items */
+}
+
+.nav-links li a {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block; /* Or 'inline-block' depending on your design */
+}
+
+.nav-links li a.active {
+    background-color: #555; /* Highlight the active page */
+}
+/* Styles for the intro section */
+.intro-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.intro-section h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: black; /* Set the text color to white */
+    text-shadow: 0px 1px 0px #000;
+    text-align: left;
+    
+}
+
+
+.info a {
+    color: blue; /* Default link color */
+    text-decoration: underline; /* Removes underline if desired */
+}
+.info:visited {
+    text-decoration: underline;
+    color: #FF0000;
+}
+
+
+
+.intro-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: right;
+}
+
+
+/* Styles for search and sort elements */
+.search-bar input[type="text"],
+.search-bar button,
+.sort-box select {
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.search-bar button {
+    background-color:#f4c192;
+    color: var(--text-color-light);
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #388E3C;
+}
+figure {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  figcaption {
+    margin-top: 5px;
+    font-style: italic;
+  }
+
+
+.ratings-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.left-apps,
+.right-apps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.app-block {
+    width: 300px;
+    padding: 20px;
+    margin: 0;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 70%; /* Adjust the width as needed */
+    /* Other styles for the logo */
+}
+.ratings-section {
+    display: flex;
+    flex-wrap: wrap; /* This allows items to wrap to the next line */
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .app-block {
+        width: calc(100% - 40px); /* Blocks take full width minus margin on smaller screens */
+    }
+}
+
+
+.info h3 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.info p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stars {
+    font-size: 24px; /* Adjust size as needed */
+    color: gold; /* Change color to match your design */
+}

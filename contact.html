@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PriSpy</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="hamburger-menu">
+        <span></span>
+       <span></span>
+       <span></span>
+
+      </label>
+      <div class="logo">
+        <a href="index.html" class="logo-link">  
+          <img src="loggnew.png" alt="PriSpy Logo" class="logo-img">
+          </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="privacyrating.html">Privacy Ratings</a></li>
+        <li><a href="privacyinsights.html">Privacy Insights</a></li>
+        <li><a href="mission.html">Our Mission</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <aside class="sidebar">
+    <h3>About PriSpy</h3>
+    <p>PriSpy is dedicated to enhancing online privacy by providing in-depth reviews and insights. Learn more about our mission and values.</p>
+  </aside>
+  
+
+  <main>
+    <section class="contact-section container">
+      <div class="form-container">
+        <h1>Contact Us</h1>
+        <p>Have questions or suggestions? Get in touch with us!</p>
+        <form action="azamrahmat9@gmail.com" method="post" class="contact-form">
+        
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <label for="name">Your Name:</label>
+          </div>
+          <div class="form-group">
+            <fieldset>
+              <legend>Feedback Type:</legend>
+              <div class="radio-group">
+                <input type="radio" id="bug" name="feedback-type" value="bug" required>
+                <label for="bug">Bug Report</label>
+                <input type="radio" id="feature" name="feedback-type" value="feature">
+                <label for="feature">Feature Request</label>
+              </div>
+            </fieldset>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+          </div>
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="subscribe-newsletter" name="subscribe-newsletter">
+            <label for="subscribe-newsletter">Subscribe to our newsletter</label>
+          </div>
+          
+          <div class="form-group buttons">
+            <button type="reset">Reset</button>
+            <a href="mailto:azamrahmat9@gmail.com?subject=Feedback%20from%20Website&body=Please%20type%20your%20message%20here" class="email-link">Submit</a>
+        </div>
+        
+        </form>
+        <div class="social-links">
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/PriSpy" aria-label="PriSpy on Facebook" class="social-icon">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <!-- Twitter -->
+          <a href="https://twitter.com/somethingcomp" aria-label="PriSpy on Twitter" class="social-icon">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/mohammed-rahmat-azam/" aria-label="PriSpy on LinkedIn" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/ra7matazam/" aria-label="PriSpy on Instagram" class="social-icon">
+            <i class="fab fa-instagram-square"></i>
+          </a>
+          <!-- YouTube -->
+          <a href="https://www.youtube.com/channel/PriSpy" aria-label="PriSpy on YouTube" class="social-icon">
+            <i class="fab fa-youtube-square"></i>
+          </a>
+        </div>
+      </div>
+      
+      
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 PriSpy. All rights reserved.</p>
+</footer>
+</body>
+</html>

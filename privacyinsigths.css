@@ -1,0 +1,263 @@
+:root {
+    /* New color scheme variables */
+    --color-black: #000000;
+    --color-light-grey: #E5E5E5;
+    --color-accent: #f4c192;
+    --color-white: #FFFFFF;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #898c90;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.text-boxes {
+    margin-top: 20px; /* Space between video and text boxes */
+}
+
+
+/* Rest of your CSS ... */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Show Hamburger Menu on Smaller Screens */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* Initially hide the nav links */
+    .nav-links {
+        display: none;
+        /* Rest of your styles */
+    }
+
+    /* When checkbox is checked, display nav links */
+    .nav-toggle:checked + .hamburger-menu + .nav-links {
+        display: flex;
+        flex-direction: column;
+        /* Rest of your styles */
+    }
+}
+
+.video-and-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.video-container {
+    width: 60%;
+}
+.transcripts-link {
+    clear: both;
+    text-align: left; /* Center the link */
+    margin-top: 5px; /* Add space between the video and the link */
+}
+
+.transcripts-link a {
+    color: #0066cc; /* Set the link color */
+    text-decoration: none; /* Remove underline from the link */
+    font-size: 16px; /* Set the font size */
+    font-weight: bold; /* Make the link text bold */
+}
+
+.transcripts-link a:hover {
+    text-decoration: underline; /* Underline on hover for better usability */
+}
+
+.text-container {
+    width: 35%;
+    padding: 0 20px; /* Adjust padding as needed */
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px; /* Adjust margin as needed */
+}
+
+.content-title {
+    width: 60%;
+    text-align: center; /* Center the text within the .content-title div */
+    font-size: 24px; /* Increase the font size */
+    font-weight: bold; /* Make the font bold */
+    margin: 0 auto 20px; /* Center the div in the container and add some margin below */
+   
+    
+}
+
+.content-description {
+    width: 35%;
+    padding: 0 20px; /* Adjust padding as needed */
+    font-size: 15px; 
+}
+.content-description ul{
+
+
+    list-style-type: disc; /* This gives you bullet points */
+    padding-left: 20px; 
+}
+.content-description li{
+
+
+    margin-bottom: 10px; /* This adds space between list items */
+    line-height: 1.6; 
+}
+
+
+.logo-img {
+    height: 50px;}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Aligns menu items horizontally */
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 10px; /* Space out the nav items */
+}
+
+.nav-links li a {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block; /* Or 'inline-block' depending on your design */
+}
+
+.nav-links li a.active {
+    background-color: #555; /* Highlight the active page */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the start on small screens */
+    }
+
+    .nav-links li {
+        width: 100%; /* Full width for vertical stacking on small screens */
+    }
+}
+@media only screen and (max-width: 600px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* Initially hide the nav links */
+    .nav-links {
+        display: none;
+        /* Rest of your styles */
+    }
+
+    /* When checkbox is checked, display nav links */
+    .nav-toggle:checked + .hamburger-menu + .nav-links {
+        display: flex;
+        flex-direction: column;
+        /* Rest of your styles */
+    }
+}
+
+.text-container p {
+    font-family: 'Verdana', sans-serif; /* This sets the font of the text */
+    font-size: 16px; /* This sets the size of the font */
+    line-height: 1.6; /* This sets the height of each line */
+    color: var(--color-black); /* This sets the color of the text */
+    margin: 0 0 20px; /* This adds space below the paragraph */
+    text-align: justify; /* This justifies the text if desired */
+}
+
+.box {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Rest of your CSS ... */
+
+
+/* Rest of your CSS ... */
+
+
+h3 {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    color: black; /* Changed to black for visibility */
+}
+
+iframe {
+    width: 100%;
+    height: 315px; /* This height should match the iframe height attribute */
+    border: none; /* Removes the border around the iframe */
+}
+.newsletter {
+    background: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.newsletter h2 {
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    max-width: 400px;
+    margin: auto;
+}
+
+.newsletter input[type=email] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+.newsletter button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

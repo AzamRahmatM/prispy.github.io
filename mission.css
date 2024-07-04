@@ -1,0 +1,313 @@
+:root {
+    /* New color scheme variables */
+    --color-black: #000000;
+    --color-light-grey: #E5E5E5;
+    --color-accent: #f4c192;
+    --color-white: #FFFFFF;
+}
+
+/* Reset some default styling */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Use a modern sans-serif font */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+}
+
+/* Utility class for a max-width and centering */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Styling for the header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Show Hamburger Menu on Smaller Screens */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* Initially hide the nav links */
+    .nav-links {
+        display: none;
+        /* Rest of your styles */
+    }
+
+    /* When checkbox is checked, display nav links */
+    .nav-toggle:checked + .hamburger-menu + .nav-links {
+        display: flex;
+        flex-direction: column;
+        /* Rest of your styles */
+    }
+}
+.logo{
+    height: 30px;
+width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Aligns menu items horizontally */
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 10px; /* Space out the nav items */
+}
+
+.nav-links li a {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block; /* Or 'inline-block' depending on your design */
+}
+
+.nav-links li a.active {
+    background-color: #555; /* Highlight the active page */
+}
+/* Hero Section */
+.hero {
+    background: var(--color-black); /* For a black background */
+    color: var(--color-white); /* Sets text color to white */
+    padding: 80px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Mission Statement Section */
+/* Mission Statement Section */
+.mission-statement {
+    padding: 40px 0;
+    background: var(--color-white);
+    display: flex;
+    flex-direction: row-reverse; /* Reverse the order to put text on the right */
+    align-items: center; /* Vertically center align items */
+    justify-content: space-between; /* Space between the image and text */
+}
+
+
+.mission-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: left; /* Align text to the left */
+}
+.mission-content {
+    flex: 1; /* Each child takes up equal space */
+    padding: 0 20px; /* Add some padding around the content */
+    text-align: left;
+}
+
+
+
+.mission-content {
+    text-align: left; /* Align the text to the right */
+}
+.mission-image a {
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid #ddd; /* Optional border for the thumbnail */
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2); /* Optional shadow for effect */
+    transition: transform 0.3s ease; /* Optional transition for hover effect */
+}
+
+.mission-image a:hover {
+    transform: scale(1.05); /* Optional scale effect on hover */
+}
+
+.mission-image img {
+    display: block;
+    width: 100%; /* or another specific size */
+    height: auto;
+    border-radius: 4px; /* Optional if you want rounded corners */
+}
+.mission-image {
+    max-width: 100%; /* Full width on small screens */
+    height: auto; /* Adjust height automatically */
+    display: block; /* Ensure it's block-level so 'margin: auto' works */
+    margin: 0 auto; /* Center the image within its container */
+    order: -1; /* Image above text on smaller screens */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .mission-statement {
+        flex-direction: column; /* Stack image and text on smaller screens */
+    }
+
+    .mission-content {
+        text-align: center; /* Center-align text on smaller screens */
+        padding: 20px; /* Add padding for spacing */
+    }
+    .mission-container { /* Replace with the actual container class */
+        flex-direction: column; /* Stack items vertically */
+    }
+
+
+    .mission-image {
+        max-width: 100%; /* Full width on small screens */
+        height: auto; /* Adjust height automatically
+        order: -1; /* Ensure image is above the text on smaller screens */
+    }
+}
+
+
+/* Benefits Section */
+.benefits {
+    background: var(--color-white);
+    padding: 40px 0;
+}
+
+.benefits h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: var(--color-black);
+}
+
+.benefits table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background: var(--color-white);
+}
+
+.benefits th,
+.benefits td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--color-light-grey);
+}
+
+.benefits th {
+    background: var(--color-accent);
+    color: var(--color-white);
+}
+
+/* Quote Section */
+.quote {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.quote-text {
+    font-style: italic;
+    background: var(--color-accent);
+    color: black;
+    padding: 20px;
+    flex-basis: 60%;
+    margin: 1rem;
+    border-left: 5px solid var(--color-black);
+}
+@media only screen and (max-width: 600px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* Initially hide the nav links */
+    .nav-links {
+        display: none;
+        /* Rest of your styles */
+    }
+
+    /* When checkbox is checked, display nav links */
+    .nav-toggle:checked + .hamburger-menu + .nav-links {
+        display: flex;
+        flex-direction: column;
+        /* Rest of your styles */
+    }
+}
+
+.quote-image {
+    flex-basis: 35%;
+    text-align: right;
+    margin: 1rem;
+}
+
+.quote-image img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid var(--color-accent);
+}
+
+/* Footer */
+footer {
+    background: var(--color-black);
+    color: var(--color-white);
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li a {
+        padding: 10px;
+    }
+
+    .mission-statement .mission-image,
+    .mission-statement .mission-content,
+    .quote-text,
+    .quote-image {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .benefits table {
+        width: 90vw;
+    }
+}

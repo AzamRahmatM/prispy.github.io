@@ -1,0 +1,18 @@
+:root {
+    --text-color: #ffffff; /* High contrast text color */
+    --background-color: #000000; /* High contrast background color */
+    --link-color: #ffff00; /* Bright color for links for visibility */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    font-size: 18px; /* Larger base font size */
+}
+
+a, button {
+    color: var(--link-color);
+    font-size: 1.2em; /* Larger link/button text */
+}
+

@@ -1,0 +1,267 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+:root {
+  /* New color scheme variables */
+  --color-black: #000000;
+  --color-light-grey: #E5E5E5;
+  --color-accent: #f4c192;
+  --color-white: #FFFFFF;
+}
+
+
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Use a modern sans-serif font */
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f4f4f4;
+}
+
+/* Utility class for a max-width and centering */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-menu div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Show Hamburger Menu on Smaller Screens */
+@media (max-width: 768px) {
+  .hamburger-menu {
+      display: block;
+  }
+
+  /* Initially hide the nav links */
+  .nav-links {
+      display: none;
+      /* Rest of your styles */
+  }
+
+  /* When checkbox is checked, display nav links */
+  .nav-toggle:checked + .hamburger-menu + .nav-links {
+      display: flex;
+      flex-direction: column;
+      /* Rest of your styles */
+  }
+}
+
+
+/* Styling for the header */
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.logo {
+  /* This sets the height of the container, not the image itself */
+  height: 30px; /* Adjust as needed */
+  width: auto;
+
+}
+
+.logo-img {
+  /* This will actually set the size of the logo image */
+  height: 50px; /* Adjust this value to fit the header */
+  width: auto; /* This will maintain the aspect ratio of the image */
+}
+
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Aligns menu items horizontally */
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 0 10px; /* Space out the nav items */
+}
+
+.nav-links li a {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block; /* Or 'inline-block' depending on your design */
+}
+@media only screen and (max-width: 600px) {
+  .hamburger-menu {
+      display: block;
+  }
+
+  /* Initially hide the nav links */
+  .nav-links {
+      display: none;
+      /* Rest of your styles */
+  }
+
+  /* When checkbox is checked, display nav links */
+  .nav-toggle:checked + .hamburger-menu + .nav-links {
+      display: flex;
+      flex-direction: column;
+      /* Rest of your styles */
+  }
+}
+.nav-links li a.active {
+  background-color: #555; /* Highlight the active page */
+}
+/* Contact section styles */
+.contact-section {
+  background-color: var(--color-white);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-top: 40px;
+  padding: 40px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-description {
+  margin-bottom: 20px;
+  color: var(--color-accent);
+  font-size: 1.1rem;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 500px; /* Set a max-width for the form */
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.sidebar {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.form-group input[type='text']{
+  
+    width: 100%;
+  
+}
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid var(--color-light-grey);
+  border-radius: 8px;
+  font-size: 1rem;
+  min-height: 150px;
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.radio-group label,
+.checkbox-group label {
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.social-icon {
+  color: var(--color-accent); /* Or another variable/color of your choice */
+  margin: 0 10px;
+  font-size: 2rem; /* Adjust the size as needed */
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #d3a672; /* Adjusted darker shade of var(--color-accent) */
+}
+
+
+
+.button-reset,
+.button-submit {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.button-reset:hover {
+  background-color: #d9d9d9; /* Adjusted darker shade of var(--color-light-grey) */
+}
+.button-submit:hover {
+  background-color: #e5b280; /* Adjusted darker shade of var(--color-accent) */
+}
+
+
+
+.button-submit {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+
+
+
+
+/* Footer styles */
+footer {
+  /* ... existing styles ... */
+  margin-top: 60px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  /* ... existing styles ... */
+  .contact-section {
+      padding: 20px;
+  }
+
+  .buttons {
+      flex-direction: column;
+  }
+
+  .button-reset,
+  .button-submit {
+      width: 100%;
+      margin-top: 10px;
+  }
+}

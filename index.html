@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage - PriSpy</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="highcontras.css" id="high-contrast" rel="alternate stylesheet" title="High Contrast" type="text/css">
+
+    
+</head>
+<body>
+    <a href="#mainContent" class="skip-link">Skip to Main Content</a>
+    <div class=" radio">
+    <button id="toggle-contrast">Toggle High Contrast</button>
+     </div>
+    <header>
+        <nav class="container">
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>    
+            <a href="index.html" class="logo-link">       
+            <img src="loggnew.png" alt="PriSpy Logo" class="logo-img">
+        </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="privacyrating.html">Privacy Ratings</a></li>
+                <li><a href="privacyinsights.html">Privacy Insights</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="mainContent" class="intro-section">
+        <img src="newlog.png" alt="PriSpy Logo" class="logomid">
+        <h2>Transparency, One Click Away</h2>
+        <video width="560" height="315" controls poster="cover.png" >
+            <source src="videohomepage.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="transcript-link">
+            <a href="videohomepage.vtt" target="_blank">See the Transcript</a>
+        </div>
+    </div>
+
+    
+ <section class="explore-section">
+        <h2>Explore our in-depth privacy reviews to make informed decisions about your online data protection.</h2> </section>
+        <div class="slideshow">
+            <img src="a.png" alt="Image A of locks">
+            <img src="b.jpg" alt="Image B of a laptop that has been locked to portray privacy">
+            <img src="c.png" alt="Image C of a mask being displayed on a laptop">
+        
+        </div>
+   
+
+    <section class="expect-section">
+        <h2>What you can expect from this website</h2>
+        <div class="content">
+            <div class="box">
+                <h3>Privacy Policy Ratings</h3>
+                <p>Explore detailed ratings of privacy policies from various websites and online services.</p>
+            </div>
+            <div class="box">
+                <h3>Privacy Insights</h3>
+                <p>Gain valuable insights into how your personal data is handled online.</p>
+            </div>
+            <div class="box">
+                <h3>User-Friendly Interface</h3>
+                <p>Enjoy a user-friendly website with a straightforward design that allows you to access essential privacy information with ease.</p>
+            </div>
+            <div class="box">
+                <h3>Regular Updates</h3>
+                <p>Expect regular updates to our ratings and insights, ensuring that you have the most current information for online data protection.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h2>Subscribe to our Newsletters</h2>
+        <form action="mailto:azamrahmat9@gmail.com" method="post" enctype="text/plain">
+            <input type="email" name="email" placeholder="Enter your email address" required>
+            
+            <button type="submit">Subscribe</button>
+        </form>
+        
+    </section>
+    <footer>
+        <p>&copy; 2023 PriSpy. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var toggleButton = document.getElementById('toggle-contrast');
+        var highContrastLink = document.getElementById('high-contrast');
+
+                    toggleButton.addEventListener('click', function() {
+            // If the stylesheet is disabled, enable it, and vice versa.
+            if (highContrastLink.disabled) {
+                highContrastLink.disabled = false;
+            } else {
+                highContrastLink.disabled = true;
+            }
+                });
+              });
+
+    </script>
+            
+</body>
+</html>
